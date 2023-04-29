@@ -7,13 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vigor dev docs",
     "build": "vigor build docs",
-    "preview": "vigor preview docs"
+    "preview": "vigor preview docs",
+    "deploy": "vigor-moon-deploy",
+    "publish": "vigor-moon-publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vigor-moon": "^1.1.4",
-    "vigor-moon-deployer": "^1.0.4"
+    "vigor-moon": "^1.1.7",
+    "vigor-moon-deployer": "^1.0.6",
+    "vigor-moon-publisher": "^1.0.0"
   }
 }

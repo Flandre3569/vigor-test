@@ -9016,13 +9016,13 @@ var loadable$2 = loadable;
 loadable$2.lib = loadable$1;
 var lazy$2 = lazy;
 lazy$2.lib = lazy$1;
-const Route0 = loadable$2(() => __vitePreload(() => import("./quickStart-561b92ef.js"), true ? [] : void 0));
-const Route1 = loadable$2(() => __vitePreload(() => import("./index-fa995e41.js"), true ? [] : void 0));
+const Route0 = loadable$2(() => __vitePreload(() => import("./quickStart-83e12151.js"), true ? [] : void 0));
+const Route1 = loadable$2(() => __vitePreload(() => import("./index-57a2d89c.js"), true ? [] : void 0));
 const routes = [
-  { path: "/guide/quickStart", element: t$1.createElement(Route0), preload: () => __vitePreload(() => import("./quickStart-561b92ef.js"), true ? [] : void 0) },
-  { path: "/", element: t$1.createElement(Route1), preload: () => __vitePreload(() => import("./index-fa995e41.js"), true ? [] : void 0) }
+  { path: "/guide/quickStart", element: t$1.createElement(Route0), preload: () => __vitePreload(() => import("./quickStart-83e12151.js"), true ? [] : void 0) },
+  { path: "/", element: t$1.createElement(Route1), preload: () => __vitePreload(() => import("./index-57a2d89c.js"), true ? [] : void 0) }
 ];
-const siteData = { "title": "vigor.js", "description": "A SSG framework.", "themeConfig": { "nav": [{ "text": "首页", "link": "/" }], "sidebar": { "/guide/": [{ "text": "Guide", "items": [{ "text": "Getting Started", "link": "/guide/quickStart" }] }] } }, "vite": {} };
+const siteData = { "title": "vigor.js", "description": "A SSG framework.", "themeConfig": { "nav": [{ "text": "首页", "link": "/" }], "sidebar": { "/guide/": [{ "text": "Guide", "items": [{ "text": "Getting Started", "link": "/guide/quickStart" }] }] } }, "icon": "", "vite": {} };
 const Content = () => {
   const rootElement = useRoutes(routes);
   return rootElement;
@@ -9034,9 +9034,9 @@ const useContextData = () => {
 const base = "";
 const vars = "";
 const __uno = "";
-const link$1 = "_link_w94wm_1";
-const socialLinkIcon = "_social-link-icon_w94wm_12";
-const bgColor = "_bg-color_w94wm_22";
+const link$1 = "_link_w15z9_1";
+const socialLinkIcon = "_social-link-icon_w15z9_12";
+const bgColor = "_bg-color_w15z9_22";
 const styles$a = {
   link: link$1,
   socialLinkIcon,
@@ -9054,8 +9054,9 @@ function Nav() {
   var _a;
   const { siteData: siteData2 } = useContextData();
   const nav = ((_a = siteData2 == null ? void 0 : siteData2.themeConfig) == null ? void 0 : _a.nav) || [];
+  const title2 = (siteData2 == null ? void 0 : siteData2.title) || "title";
   return /* @__PURE__ */ jsx("header", { fixed: "~", w: "full", z: "10", className: styles$a.bgColor, children: /* @__PURE__ */ jsxs("div", { flex: "~", justify: "between", items: "center", className: "px-8 h-14 divider-bottom", children: [
-    /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("a", { href: "/", className: "w-full h-full text-1rem flex items-center", hover: "opacity-60", children: "vigor.js" }) }),
+    /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("a", { href: "/", className: "w-full h-full text-1rem flex items-center", hover: "opacity-60", children: title2 }) }),
     /* @__PURE__ */ jsxs("div", { flex: "~", children: [
       /* @__PURE__ */ jsx("div", { flex: "~", className: "divider-right", children: nav.map((item2) => /* @__PURE__ */ reactExports.createElement(MenuItem, { ...item2, key: item2.text })) }),
       /* @__PURE__ */ jsx("div", {}),
@@ -9063,7 +9064,7 @@ function Nav() {
     ] })
   ] }) });
 }
-const link = "_link_h8tgh_1";
+const link = "_link_j7cjf_1";
 const styles$9 = {
   link
 };
@@ -9078,11 +9079,11 @@ function Link(props) {
     " "
   ] });
 }
-const button = "_button_5uvhl_1";
-const medium = "_medium_5uvhl_14";
-const big = "_big_5uvhl_21";
-const brand = "_brand_5uvhl_28";
-const alt = "_alt_5uvhl_32";
+const button = "_button_m5yg3_1";
+const medium = "_medium_m5yg3_14";
+const big = "_big_m5yg3_21";
+const brand = "_brand_m5yg3_28";
+const alt = "_alt_m5yg3_35";
 const styles$8 = {
   button,
   medium,
@@ -9193,9 +9194,9 @@ function HomePage() {
     /* @__PURE__ */ jsx(FooterComponent, { footer: frontmatter.footer })
   ] });
 }
-const sidebar = "_sidebar_byf93_1";
-const itemOnfocus = "_item-onfocus_byf93_15";
-const item = "_item_byf93_15";
+const sidebar = "_sidebar_1j6y5_1";
+const itemOnfocus = "_item-onfocus_1j6y5_15";
+const item = "_item_1j6y5_15";
 const styles$4 = {
   sidebar,
   itemOnfocus,
@@ -9268,7 +9269,7 @@ function NextPage() {
     ] }) })
   ] }) });
 }
-const tocLink = "_toc-link_7b492_1";
+const tocLink = "_toc-link_jxhxs_1";
 const styles$2 = {
   tocLink
 };
@@ -9305,7 +9306,7 @@ function TocComponent(props) {
       }
     ) }, tocTree.id);
   };
-  return /* @__PURE__ */ jsx("div", { className: "", children: /* @__PURE__ */ jsx("div", { children: tocLength && /* @__PURE__ */ jsxs("div", { id: "toc-container", className: "relative divider-left pl-4 text-13px font-medium", children: [
+  return /* @__PURE__ */ jsx("div", { className: "", children: /* @__PURE__ */ jsx("div", { children: tocLength && /* @__PURE__ */ jsxs("div", { id: "toc-container", className: "fixed divider-left pl-4 text-13px font-medium", children: [
     /* @__PURE__ */ jsx(
       "div",
       {
@@ -9317,9 +9318,9 @@ function TocComponent(props) {
     /* @__PURE__ */ jsx("nav", { children: /* @__PURE__ */ jsx("ul", { relative: "~", children: headers.map(renderToc) }) })
   ] }) }) });
 }
-const vigorDoc = "_vigor-doc_1qwul_4";
-const tocContainer = "_toc-container_1qwul_38";
-const headerAnchor = "_header-anchor_1qwul_47";
+const vigorDoc = "_vigor-doc_vrkfu_4";
+const tocContainer = "_toc-container_vrkfu_38";
+const headerAnchor = "_header-anchor_vrkfu_47";
 const styles$1 = {
   vigorDoc,
   tocContainer,

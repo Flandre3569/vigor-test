@@ -17,6 +17,6 @@
   "dependencies": {
     "vigor-moon": "^1.1.7",
     "vigor-moon-deployer": "^1.0.6",
-    "vigor-moon-publisher": "^1.0.1"
+    "vigor-moon-publisher": "^1.0.2"
   }
 }
